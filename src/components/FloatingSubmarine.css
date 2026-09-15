@@ -1,0 +1,40 @@
+.submarine-wrapper {
+  position: fixed;
+  top: 100px; 
+  width: 12vw; 
+  max-width: 100px; 
+  z-index: 999999 !important; 
+  pointer-events: none;
+  will-change: transform;
+}
+
+.submarine-flipper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.floating-bobbing-animation {
+  animation: sub-bob 4s ease-in-out infinite;
+}
+
+.floating-bobbing-animation img {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  display: block;
+}
+
+@keyframes sub-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* For mobile, make it even smaller */
+@media (max-width: 768px) {
+  .submarine-wrapper {
+    width: 60px;
+    top: 50px;
+  }
+}

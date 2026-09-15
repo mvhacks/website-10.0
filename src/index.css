@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: black;
+	cursor: url('/public/Images/cursor.png') 8 8, auto;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.MuiLink-root {
+  cursor: url('/public/Images/cursor.png') 8 8, auto !important;
+}
+
+#mvhackstext {
+	font-size: clamp(16px, 5vw, 2.25rem);
+}
+
+#footer {
+	text-align: center;
+}
+
+#alert {
+	height: 39px;
+	background-color: #81807F;
+	font-size: 14.9;
+	font-family: "Montserrat", sans-serif;
+	padding-left: 30px;
+}
+
+#devpost {
+	width: 250px;
+	background-color: #779df1;
+}
+
+#contactUs {
+	width: 250px;
+	background-color: #779df1;
+}
+
+#arrow {
+	margin-right: -10px;
+	margin-left: 27px;
+}
+
+#blurbSponsors {
+	color: white;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 25px;
+	padding-top: 5%;
+}
+
+#email {
+	color: rgb(147, 147, 230);
+}
+
+#downloadProspectus {
+	color: rgb(147, 147, 230);
+}
+
+.MuiLink-root,
+.MuiButton-root,
+.MuiIconButton-root,
+.MuiListItemButton-root,
+.MuiButton-root,
+.MuiIconButton-root,
+.MuiListItemButton-root,
+[role="button"],
+a#prospectusDownload,
+a#email,
+button#link,
+#link,
+#contactUs,
+#devpost,
+#instagram,
+#downloadProspectus,
+.navbar a,
+.navbar button,
+.carousel-container .react-multi-carousel__arrow,
+.carousel-container .react-multi-carousel__arrow--left,
+.carousel-container .react-multi-carousel__arrow--right,
+.carousel-container button.react-multi-carousel__arrow,
+.react-multi-carousel__arrow,
+.react-multi-carousel__arrow--left,
+.react-multi-carousel__arrow--right,
+.react-multi-carousel-arrow,
+.carousel-container button,
+.MuiAccordionSummary-root,
+.MuiAccordionSummary-root button,
+.MuiAccordionSummary-root .MuiButtonBase-root,
+.MuiButtonBase-root[role="button"],
+.JoyAccordionSummary-root,
+.JoyAccordionSummary-root button,
+[style*="cursor: pointer"],
+[style*="cursor: grab"],
+.schedule-slider,
+[role="button"].MuiButtonBase-root {
+  cursor: url('/public/Images/pointer.png') 8 8, pointer !important;
+}
+
+#prospectusImage {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
+
+}
+
+/* Core Glass Logic */
+.liquidGlass-container {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.liquidGlass-effect {
+  position: absolute;
+  inset: 2px; 
+  z-index: -2;
+  backdrop-filter: blur(3px);
+  filter: url(#glass-distortion);
+  pointer-events: none;
+}
+
+.liquidGlass-tint {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.15); /* Adjusted for dark mode theme */
+  pointer-events: none;
+}
+
+.liquidGlass-shine {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: inset 1px 1px 1px 0 rgba(255, 255, 255, 0.3),
+              inset -1px -1px 1px 0 rgba(255, 255, 255, 0.1);
+}
