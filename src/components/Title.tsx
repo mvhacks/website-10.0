@@ -1,7 +1,6 @@
 import React from "react";
 import Box from "@mui/joy/Box";
 import Typography from "@mui/joy/Typography";
-import Button from "@mui/joy/Button";
 import fishCircle from "../images/fish_circle.png";
 
 export default function Title() {
